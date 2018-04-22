@@ -1,0 +1,5 @@
+## Create a dataframe
+a = sc.parallelize([['a', 'foo'], ['b', 'hem'], ['c', 'haw']]).toDF(['a_id', 'extra'])
+
+# Windows
+from pyspark.sql.window import Window
